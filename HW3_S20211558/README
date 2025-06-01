@@ -1,0 +1,53 @@
+README
+20211558 윤준서
+
+(a) object
+I. static
+프로젝트의 기본 코드에 나온 Cow, Teapot, Table1, Table2, Chair, Picture는 유지했다.
+새로 추가한 object는 다음과 같다.
+	I. Bike - 분홍색		II. Bus - 파란색		III. Cat - 검은색
+	IV. Dragon - 보라색	V. Tank - 갈색
+main camera를 통해 house 내부를 진입하여 object를 관찰한 모습은 다음과 같다.
+   
+   
+   
+II. dynamic
+프로젝트의 기본 코드에 나온 Tiger, Cow1, Cow2 는 삭제했다.
+새로 추가한 object는 다음과 같다.
+	I. Tiger - house의 테두리를 따라 사각형으로 순환 운동
+		 가로 240, 세로 170인 직사각형 경로. (0, 0)에서 시작한다.
+	II. Cow2 - house 내부의 방에서 원형으로 순환 운동
+		 반지름 10인 원 경로. 원의 중심은 (195, 65)이다.
+해당 object들의 이미지는 밑의 camera 부분에서 확인할 수 있다.
+
+(b) camera
+I. axis move
+x, y, z 키를 누르면 camera가 이동하는 기준 축을 각각 x-axis, y-axis, z-axis로 설정할 수 있다. 그리고 마우스를 좌 클릭 한 상태에서 마우스의 위치를 위로 올리면 (+) 방향, 아래로 내리면 (-) 방향으로 camera의 위치가 이동한다.
+
+II. axis rotate
+x, y, z 키를 누르면 camera가 회전하는 기준 축을 각각 x-axis, y-axis, z-axis로 설정할 수 있다. 그리고 마우스를 우 클릭 한 상태에서 마우스의 위치를 오른쪽으로 움직이면 (+) 방향, 왼쪽으로 움직이면 (-) 방향으로 camera가 World 축 기준으로 회전한다.
+r 키를 누르면 camera의 회전 기준이 Local 축으로 변한다. 이 때는 x-axis, y-axis, z-axis 상관 없이 우 클릭 한 상태에서 마우스를 움직이면 직관적으로 회전한다. 다시 r 키를 누르면 기준이 World 축으로 변한다.
+
+III. zoom in / out
+마우스 휠을 이용해 camera를 zoom in, zoom out 할 수 있다. 휠을 아래로 내리면 zoom in, 위로 올리면 zoom out이 된다.
+
+IV. static CCTV
+window의 좌상단에 static CCTV의 화면을 도시했다. 총 3개의 CCTV는 한 화면을 공유한다. s 키를 누르면 다음 CCTV로 화면을 도시한다. 3개의 CCTV를 각각 도시한 모습은 다음과 같다.
+     
+
+V. dynamic CCTV
+window의 좌상단에 static CCTV 화면 아래에 dynamic CCTV의 화면을 도시했다. 회전과 zoom in / out 의 기능은 main camera와 같으므로 똑같이 마우스를 통해 움직일 수 있도록 한다. a 키를 누르면 제어할 수 있는 camera가 바뀐다. 즉 현재 제어 중인 camera가 main camera이면, a 키를 통해 dynamic CCTV로 제어권을 넘길 수 있다. 다시 a 키를 누르면 main camera로 돌아간다. CCTV를 도시한 모습은 다음과 같다.
+ 
+
+
+
+VI. orthogonal
+widow의 좌하단에 상면도 화면을 도시했다. 그 위에 측면도 화면을 도시했다. 그 오른쪽에 정면도 화면을 도시했다. 3개의 직교 투영 camera를 도시한 모습은 다음과 같다.
+ 
+
+VII. toggle
+(이 부분은 구현하지 못했습니다.)
+
+최종적으로 프로젝트를 실행했을 때 기본 화면은 다음과 같다.
+(c 키와 f 키, esc 키의 기능은 유지했다.)
+ 
