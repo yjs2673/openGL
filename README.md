@@ -1,4 +1,5 @@
-CSE-4170
+# Basic Computer Graphics
+기초컴퓨터그래픽스 CSE-4170
 
 [과목 목표]
 
